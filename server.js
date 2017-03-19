@@ -9,7 +9,15 @@ db.on('error', function() {
   throw new Error('unable to connect to database at ' + mongoUri);
 });
 
+var bodyParser = require('body-parser');
+
 var app = express();
+
+app.use(bodyParser.json());
+
+app.use(bodyParser.urlencoded({
+  extended: true,
+}));
 
 
 require('./models/musician');
