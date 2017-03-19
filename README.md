@@ -6,3 +6,5 @@ Simple server
 Use Express
 ### 3. Step
 REST API, (Routers, request, response, controllers)
+### 4. Step
+Use mongoose.js

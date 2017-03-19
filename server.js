@@ -1,6 +1,20 @@
-var express = require('express');
+var express = require('express'),
+  mongoose = require('mongoose'),
+  fs = require('fs');
+
+var mongoUri = 'mongodb://localhost/noderest';
+mongoose.connect(mongoUri);
+var db = mongoose.connection;
+db.on('error', function() {
+  throw new Error('unable to connect to database at ' + mongoUri);
+});
+
 var app = express();
+
+
+require('./models/musician');
 var router = require('./routes');
 router(app);
+
 app.listen(3001);
 console.log('Listening on port 3001...');

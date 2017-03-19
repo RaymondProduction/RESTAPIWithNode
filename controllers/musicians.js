@@ -1,10 +1,10 @@
-exports.findAll = function(req, res) {
-  res.send([{
-    "id": 1,
-    "name": "Max",
-    "band": "Maximum Pain",
-    "instrument": "guitar"
-  }]);
+var mongoose = require('mongoose'),
+Musician = mongoose.model('Musician');
+
+exports.findAll = function(req, res){
+  Musician.find({},function(err, results) {
+    return res.send(results);
+  });
 };
 exports.findById = function() {};
 exports.add = function() {};
