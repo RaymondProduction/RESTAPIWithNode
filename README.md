@@ -10,3 +10,5 @@ REST API, (Routers, request, response, controllers)
 Use mongoose.js
 ### 5. Step
 Import data for MongoDB
+### 6. Step
+Use boby-parser and create request for add, delete, update and find by id of musicians
