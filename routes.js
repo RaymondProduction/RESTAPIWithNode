@@ -5,4 +5,5 @@ module.exports = function(app){
     app.post('/musicians', musicians.add);
     app.put('/musicians/:id', musicians.update);
     app.delete('/musicians/:id', musicians.delete);
+    app.get('/import', musicians.import);
 }

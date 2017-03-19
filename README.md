@@ -8,3 +8,5 @@ Use Express
 REST API, (Routers, request, response, controllers)
 ### 4. Step
 Use mongoose.js
+### 5. Step
+Import data for MongoDB
