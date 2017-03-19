@@ -1,0 +1,14 @@
+{
+    "extends": "google",
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
+    "rules": {
+         // disable rules from base configurations
+        "no-console": "off",
+        "padded-blocks":"off",
+        "require-jsdoc": "off",
+        "no-var":0,
+        "new-cap": ["error", { "capIsNew": false }]
+    }
+}

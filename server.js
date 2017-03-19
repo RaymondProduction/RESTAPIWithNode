@@ -1,6 +1,5 @@
-var express = require('express'),
-  mongoose = require('mongoose'),
-  fs = require('fs');
+var express = require('express');
+var mongoose = require('mongoose');
 
 var mongoUri = 'mongodb://localhost/noderest';
 mongoose.connect(mongoUri);

@@ -8,6 +8,8 @@
   },
   "devDependencies": {
     "body-parser": "^1.17.1",
+    "eslint": "^3.18.0",
+    "eslint-config-google": "^0.7.1",
     "mongoose": "^4.9.1"
   }
 }
